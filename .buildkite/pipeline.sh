@@ -17,4 +17,5 @@ if [[ "$BUILDKITE_BRANCH" == "master" ]]; then
   echo "  - wait"
   echo "  - command: \"echo Deploy!\""
   echo "    label: \":rocket:\""
+  echo "  - command: \".buildkite/pipeline-step-two.py | buildkite-agent pipeline upload\""
 fi
